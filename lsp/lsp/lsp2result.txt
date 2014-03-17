@@ -1,0 +1,451 @@
+127.0.0.1:43495
+client 1 connected in
+The window's addr: 127.0.0.1:55082
+The server has replied.
+Connection established
+=== TestWindow1: 1 client, max capacity (1 clients, 10 msgs/client, 5 window size, 5 max epochs)
+127.0.0.1:22456
+client 1 connected in
+The window's addr: 127.0.0.1:41941
+The server has replied.
+Connection established
+127.0.0.1:22456
+client 2 connected in
+The window's addr: 127.0.0.1:55179
+The server has replied.
+Connection established
+127.0.0.1:22456
+client 3 connected in
+The window's addr: 127.0.0.1:39984
+The server has replied.
+Connection established
+127.0.0.1:22456
+client 4 connected in
+The window's addr: 127.0.0.1:59926
+The server has replied.
+Connection established
+127.0.0.1:22456
+client 5 connected in
+The window's addr: 127.0.0.1:42945
+The server has replied.
+Connection established
+=== TestWindow2: 5 clients, max capacity (5 clients, 25 msgs/client, 10 window size, 5 max epochs)
+127.0.0.1:33370
+client 1 connected in
+The window's addr: 127.0.0.1:53937
+The server has replied.
+Connection established
+127.0.0.1:33370
+client 2 connected in
+The window's addr: 127.0.0.1:33038
+The server has replied.
+Connection established
+127.0.0.1:33370
+client 3 connected in
+The window's addr: 127.0.0.1:57136
+The server has replied.
+Connection established
+127.0.0.1:33370
+client 4 connected in
+The window's addr: 127.0.0.1:36716
+The server has replied.
+Connection established
+127.0.0.1:33370
+client 5 connected in
+The window's addr: 127.0.0.1:58844
+The server has replied.
+Connection established
+127.0.0.1:33370
+client 6 connected in
+The window's addr: 127.0.0.1:41078
+The server has replied.
+Connection established
+127.0.0.1:33370
+client 7 connected in
+The window's addr: 127.0.0.1:41506
+The server has replied.
+Connection established
+127.0.0.1:33370
+client 8 connected in
+The window's addr: 127.0.0.1:46996
+The server has replied.
+Connection established
+127.0.0.1:33370
+client 9 connected in
+The window's addr: 127.0.0.1:56583
+The server has replied.
+Connection established
+127.0.0.1:33370
+client 10 connected in
+The window's addr: 127.0.0.1:47341
+The server has replied.
+Connection established
+=== TestWindow3: 10 clients, max capacity (10 clients, 25 msgs/client, 10 window size, 5 max epochs)
+Notice! The logic flow has been compromised for msgInReading
+Notice! The logic flow has been compromised for msgInReading
+Notice! The logic flow has been compromised for msgInReading
+Notice! The logic flow has been compromised for msgInReading
+Notice! The logic flow has been compromised for msgInReading
+--- FAIL: TestWindow3 (2.51 seconds)
+	lsp2_test.go:83: Started server on port 33370.
+	lsp2_test.go:101: Server write drop percent set to 100%
+	lsp2_test.go:259: Waiting for clients...
+	lsp2_test.go:209: Server reading 250 total messages from clients.
+	lsp2_test.go:131: Client 2 streaming 25 messages to the server.
+	lsp2_test.go:131: Client 3 streaming 25 messages to the server.
+	lsp2_test.go:131: Client 5 streaming 25 messages to the server.
+	lsp2_test.go:131: Client 10 streaming 25 messages to the server.
+	lsp2_test.go:131: Client 1 streaming 25 messages to the server.
+	lsp2_test.go:131: Client 4 streaming 25 messages to the server.
+	lsp2_test.go:131: Client 6 streaming 25 messages to the server.
+	lsp2_test.go:131: Client 7 streaming 25 messages to the server.
+	lsp2_test.go:131: Client 8 streaming 25 messages to the server.
+	lsp2_test.go:131: Client 9 streaming 25 messages to the server.
+	lsp2_test.go:146: Client 2 finished streaming 25 messages to the server.
+	lsp2_test.go:146: Client 3 finished streaming 25 messages to the server.
+	lsp2_test.go:146: Client 5 finished streaming 25 messages to the server.
+	lsp2_test.go:146: Client 10 finished streaming 25 messages to the server.
+	lsp2_test.go:146: Client 1 finished streaming 25 messages to the server.
+	lsp2_test.go:146: Client 4 finished streaming 25 messages to the server.
+	lsp2_test.go:146: Client 6 finished streaming 25 messages to the server.
+	lsp2_test.go:146: Client 7 finished streaming 25 messages to the server.
+	lsp2_test.go:146: Client 8 finished streaming 25 messages to the server.
+	lsp2_test.go:146: Client 9 finished streaming 25 messages to the server.
+	lsp2_test.go:272: Done waiting for clients.
+	lsp2_test.go:244: Waiting for server...
+	lsp2_test.go:226: Server read message 1 of 250 from clients: 4856228576997697207
+	lsp2_test.go:226: Server read message 2 of 250 from clients: 4856228576997697207
+	lsp2_test.go:226: Server read message 3 of 250 from clients: 4856228576997697207
+	lsp2_test.go:226: Server read message 4 of 250 from clients: 4856228576997697207
+	lsp2_test.go:226: Server read message 5 of 250 from clients: 4856228576997697207
+	lsp2_test.go:226: Server read message 6 of 250 from clients: 4856228576997697207
+	lsp2_test.go:226: Server read message 7 of 250 from clients: 4856228576997697207
+	lsp2_test.go:226: Server read message 8 of 250 from clients: 4856228576997697207
+	lsp2_test.go:226: Server read message 9 of 250 from clients: 4856228576997697207
+	lsp2_test.go:226: Server read message 10 of 250 from clients: 4856228576997697207
+	lsp2_test.go:226: Server read message 11 of 250 from clients: 5379160538840107174
+	lsp2_test.go:226: Server read message 12 of 250 from clients: 5379160538840107174
+	lsp2_test.go:226: Server read message 13 of 250 from clients: 5379160538840107174
+	lsp2_test.go:226: Server read message 14 of 250 from clients: 5379160538840107174
+	lsp2_test.go:226: Server read message 15 of 250 from clients: 5379160538840107174
+	lsp2_test.go:226: Server read message 16 of 250 from clients: 5379160538840107174
+	lsp2_test.go:226: Server read message 17 of 250 from clients: 5379160538840107174
+	lsp2_test.go:226: Server read message 18 of 250 from clients: 5379160538840107174
+	lsp2_test.go:226: Server read message 19 of 250 from clients: 5379160538840107174
+	lsp2_test.go:226: Server read message 20 of 250 from clients: 5379160538840107174
+	lsp2_test.go:226: Server read message 21 of 250 from clients: 1132468866947428804
+	lsp2_test.go:226: Server read message 22 of 250 from clients: 1132468866947428804
+	lsp2_test.go:226: Server read message 23 of 250 from clients: 1132468866947428804
+	lsp2_test.go:226: Server read message 24 of 250 from clients: 1132468866947428804
+	lsp2_test.go:226: Server read message 25 of 250 from clients: 1132468866947428804
+	lsp2_test.go:226: Server read message 26 of 250 from clients: 1132468866947428804
+	lsp2_test.go:226: Server read message 27 of 250 from clients: 1132468866947428804
+	lsp2_test.go:226: Server read message 28 of 250 from clients: 1132468866947428804
+	lsp2_test.go:226: Server read message 29 of 250 from clients: 1132468866947428804
+	lsp2_test.go:226: Server read message 30 of 250 from clients: 1132468866947428804
+	lsp2_test.go:226: Server read message 31 of 250 from clients: 3714626320341683554
+	lsp2_test.go:226: Server read message 32 of 250 from clients: 3714626320341683554
+	lsp2_test.go:226: Server read message 33 of 250 from clients: 3714626320341683554
+	lsp2_test.go:226: Server read message 34 of 250 from clients: 3714626320341683554
+	lsp2_test.go:226: Server read message 35 of 250 from clients: 3714626320341683554
+	lsp2_test.go:226: Server read message 36 of 250 from clients: 3714626320341683554
+	lsp2_test.go:226: Server read message 37 of 250 from clients: 3714626320341683554
+	lsp2_test.go:226: Server read message 38 of 250 from clients: 3714626320341683554
+	lsp2_test.go:226: Server read message 39 of 250 from clients: 3714626320341683554
+	lsp2_test.go:226: Server read message 40 of 250 from clients: 3714626320341683554
+	lsp2_test.go:226: Server read message 41 of 250 from clients: 5386023137543926533
+	lsp2_test.go:226: Server read message 42 of 250 from clients: 5386023137543926533
+	lsp2_test.go:226: Server read message 43 of 250 from clients: 5386023137543926533
+	lsp2_test.go:226: Server read message 44 of 250 from clients: 5386023137543926533
+	lsp2_test.go:226: Server read message 45 of 250 from clients: 5386023137543926533
+	lsp2_test.go:226: Server read message 46 of 250 from clients: 5386023137543926533
+	lsp2_test.go:226: Server read message 47 of 250 from clients: 5386023137543926533
+	lsp2_test.go:226: Server read message 48 of 250 from clients: 5386023137543926533
+	lsp2_test.go:226: Server read message 49 of 250 from clients: 5386023137543926533
+	lsp2_test.go:226: Server read message 50 of 250 from clients: 5386023137543926533
+	lsp2_test.go:226: Server read message 51 of 250 from clients: 3135734344846819455
+	lsp2_test.go:226: Server read message 52 of 250 from clients: 3135734344846819455
+	lsp2_test.go:226: Server read message 53 of 250 from clients: 3135734344846819455
+	lsp2_test.go:226: Server read message 54 of 250 from clients: 3135734344846819455
+	lsp2_test.go:226: Server read message 55 of 250 from clients: 3135734344846819455
+	lsp2_test.go:226: Server read message 56 of 250 from clients: 3135734344846819455
+	lsp2_test.go:226: Server read message 57 of 250 from clients: 3135734344846819455
+	lsp2_test.go:226: Server read message 58 of 250 from clients: 3135734344846819455
+	lsp2_test.go:226: Server read message 59 of 250 from clients: 3135734344846819455
+	lsp2_test.go:226: Server read message 60 of 250 from clients: 3135734344846819455
+	lsp2_test.go:226: Server read message 61 of 250 from clients: 2595369813562687511
+	lsp2_test.go:226: Server read message 62 of 250 from clients: 2595369813562687511
+	lsp2_test.go:226: Server read message 63 of 250 from clients: 2595369813562687511
+	lsp2_test.go:226: Server read message 64 of 250 from clients: 2595369813562687511
+	lsp2_test.go:226: Server read message 65 of 250 from clients: 2595369813562687511
+	lsp2_test.go:226: Server read message 66 of 250 from clients: 2595369813562687511
+	lsp2_test.go:226: Server read message 67 of 250 from clients: 2595369813562687511
+	lsp2_test.go:226: Server read message 68 of 250 from clients: 2595369813562687511
+	lsp2_test.go:226: Server read message 69 of 250 from clients: 2595369813562687511
+	lsp2_test.go:226: Server read message 70 of 250 from clients: 2595369813562687511
+	lsp2_test.go:226: Server read message 71 of 250 from clients: 6309715921250726587
+	lsp2_test.go:226: Server read message 72 of 250 from clients: 6309715921250726587
+	lsp2_test.go:226: Server read message 73 of 250 from clients: 6309715921250726587
+	lsp2_test.go:226: Server read message 74 of 250 from clients: 6309715921250726587
+	lsp2_test.go:226: Server read message 75 of 250 from clients: 6309715921250726587
+	lsp2_test.go:226: Server read message 76 of 250 from clients: 6309715921250726587
+	lsp2_test.go:226: Server read message 77 of 250 from clients: 6309715921250726587
+	lsp2_test.go:226: Server read message 78 of 250 from clients: 6309715921250726587
+	lsp2_test.go:226: Server read message 79 of 250 from clients: 6309715921250726587
+	lsp2_test.go:226: Server read message 80 of 250 from clients: 6309715921250726587
+	lsp2_test.go:226: Server read message 81 of 250 from clients: 4010511578700616180
+	lsp2_test.go:226: Server read message 82 of 250 from clients: 4010511578700616180
+	lsp2_test.go:226: Server read message 83 of 250 from clients: 4010511578700616180
+	lsp2_test.go:226: Server read message 84 of 250 from clients: 4010511578700616180
+	lsp2_test.go:226: Server read message 85 of 250 from clients: 4010511578700616180
+	lsp2_test.go:226: Server read message 86 of 250 from clients: 4010511578700616180
+	lsp2_test.go:226: Server read message 87 of 250 from clients: 4010511578700616180
+	lsp2_test.go:226: Server read message 88 of 250 from clients: 4010511578700616180
+	lsp2_test.go:226: Server read message 89 of 250 from clients: 4010511578700616180
+	lsp2_test.go:226: Server read message 90 of 250 from clients: 4010511578700616180
+	lsp2_test.go:226: Server read message 91 of 250 from clients: 270522503247962836
+	lsp2_test.go:226: Server read message 92 of 250 from clients: 270522503247962836
+	lsp2_test.go:226: Server read message 93 of 250 from clients: 270522503247962836
+	lsp2_test.go:226: Server read message 94 of 250 from clients: 270522503247962836
+	lsp2_test.go:226: Server read message 95 of 250 from clients: 270522503247962836
+	lsp2_test.go:226: Server read message 96 of 250 from clients: 270522503247962836
+	lsp2_test.go:226: Server read message 97 of 250 from clients: 270522503247962836
+	lsp2_test.go:226: Server read message 98 of 250 from clients: 270522503247962836
+	lsp2_test.go:226: Server read message 99 of 250 from clients: 270522503247962836
+	lsp2_test.go:226: Server read message 100 of 250 from clients: 270522503247962836
+	lsp2_test.go:255: Done waiting for server.
+	lsp2_test.go:293: Server received expected messages from clients.
+	lsp2_test.go:101: Server write drop percent set to 0%
+	lsp2_test.go:244: Waiting for server...
+	lsp2_test.go:226: Server read message 101 of 250 from clients: 2912864135837216355
+	lsp2_test.go:226: Server read message 102 of 250 from clients: 7446325817084758564
+	lsp2_test.go:226: Server read message 103 of 250 from clients: 7674694311977337294
+	lsp2_test.go:226: Server read message 104 of 250 from clients: 6472036125412537044
+	lsp2_test.go:226: Server read message 105 of 250 from clients: 782633202867762597
+	lsp2_test.go:226: Server read message 106 of 250 from clients: 7853639011485401781
+	lsp2_test.go:226: Server read message 107 of 250 from clients: 3273552291852778590
+	lsp2_test.go:226: Server read message 108 of 250 from clients: 188609050050130584
+	lsp2_test.go:226: Server read message 109 of 250 from clients: 39673590492075355
+	lsp2_test.go:226: Server read message 110 of 250 from clients: 8505433183249972466
+	lsp2_test.go:226: Server read message 111 of 250 from clients: 2912864135837216355
+	lsp2_test.go:226: Server read message 112 of 250 from clients: 7446325817084758564
+	lsp2_test.go:226: Server read message 113 of 250 from clients: 7674694311977337294
+	lsp2_test.go:226: Server read message 114 of 250 from clients: 2912864135837216355
+	lsp2_test.go:226: Server read message 115 of 250 from clients: 7446325817084758564
+	lsp2_test.go:226: Server read message 116 of 250 from clients: 6472036125412537044
+	lsp2_test.go:226: Server read message 117 of 250 from clients: 7674694311977337294
+	lsp2_test.go:226: Server read message 118 of 250 from clients: 782633202867762597
+	lsp2_test.go:226: Server read message 119 of 250 from clients: 7853639011485401781
+	lsp2_test.go:226: Server read message 120 of 250 from clients: 6472036125412537044
+	lsp2_test.go:226: Server read message 121 of 250 from clients: 3273552291852778590
+	lsp2_test.go:226: Server read message 122 of 250 from clients: 782633202867762597
+	lsp2_test.go:226: Server read message 123 of 250 from clients: 7853639011485401781
+	lsp2_test.go:226: Server read message 124 of 250 from clients: 188609050050130584
+	lsp2_test.go:226: Server read message 125 of 250 from clients: 3273552291852778590
+	lsp2_test.go:226: Server read message 126 of 250 from clients: 39673590492075355
+	lsp2_test.go:226: Server read message 127 of 250 from clients: 8505433183249972466
+	lsp2_test.go:226: Server read message 128 of 250 from clients: 188609050050130584
+	lsp2_test.go:226: Server read message 129 of 250 from clients: 39673590492075355
+	lsp2_test.go:226: Server read message 130 of 250 from clients: 8505433183249972466
+	lsp2_test.go:226: Server read message 131 of 250 from clients: 2912864135837216355
+	lsp2_test.go:226: Server read message 132 of 250 from clients: 2912864135837216355
+	lsp2_test.go:226: Server read message 133 of 250 from clients: 7446325817084758564
+	lsp2_test.go:226: Server read message 134 of 250 from clients: 2912864135837216355
+	lsp2_test.go:226: Server read message 135 of 250 from clients: 7446325817084758564
+	lsp2_test.go:226: Server read message 136 of 250 from clients: 2912864135837216355
+	lsp2_test.go:226: Server read message 137 of 250 from clients: 7446325817084758564
+	lsp2_test.go:226: Server read message 138 of 250 from clients: 2912864135837216355
+	lsp2_test.go:226: Server read message 139 of 250 from clients: 2912864135837216355
+	lsp2_test.go:226: Server read message 140 of 250 from clients: 2912864135837216355
+	lsp2_test.go:226: Server read message 141 of 250 from clients: 7446325817084758564
+	lsp2_test.go:226: Server read message 142 of 250 from clients: 7674694311977337294
+	lsp2_test.go:226: Server read message 143 of 250 from clients: 7674694311977337294
+	lsp2_test.go:226: Server read message 144 of 250 from clients: 7674694311977337294
+	lsp2_test.go:226: Server read message 145 of 250 from clients: 7674694311977337294
+	lsp2_test.go:226: Server read message 146 of 250 from clients: 7446325817084758564
+	lsp2_test.go:226: Server read message 147 of 250 from clients: 7446325817084758564
+	lsp2_test.go:226: Server read message 148 of 250 from clients: 7446325817084758564
+	lsp2_test.go:226: Server read message 149 of 250 from clients: 6472036125412537044
+	lsp2_test.go:226: Server read message 150 of 250 from clients: 6472036125412537044
+	lsp2_test.go:226: Server read message 151 of 250 from clients: 6472036125412537044
+	lsp2_test.go:226: Server read message 152 of 250 from clients: 7674694311977337294
+	lsp2_test.go:226: Server read message 153 of 250 from clients: 7674694311977337294
+	lsp2_test.go:226: Server read message 154 of 250 from clients: 7674694311977337294
+	lsp2_test.go:226: Server read message 155 of 250 from clients: 6472036125412537044
+	lsp2_test.go:226: Server read message 156 of 250 from clients: 782633202867762597
+	lsp2_test.go:226: Server read message 157 of 250 from clients: 7853639011485401781
+	lsp2_test.go:226: Server read message 158 of 250 from clients: 782633202867762597
+	lsp2_test.go:226: Server read message 159 of 250 from clients: 7853639011485401781
+	lsp2_test.go:226: Server read message 160 of 250 from clients: 782633202867762597
+	lsp2_test.go:226: Server read message 161 of 250 from clients: 6472036125412537044
+	lsp2_test.go:226: Server read message 162 of 250 from clients: 6472036125412537044
+	lsp2_test.go:226: Server read message 163 of 250 from clients: 782633202867762597
+	lsp2_test.go:226: Server read message 164 of 250 from clients: 7853639011485401781
+	lsp2_test.go:226: Server read message 165 of 250 from clients: 3273552291852778590
+	lsp2_test.go:226: Server read message 166 of 250 from clients: 3273552291852778590
+	lsp2_test.go:226: Server read message 167 of 250 from clients: 7853639011485401781
+	lsp2_test.go:226: Server read message 168 of 250 from clients: 782633202867762597
+	lsp2_test.go:226: Server read message 169 of 250 from clients: 7853639011485401781
+	lsp2_test.go:226: Server read message 170 of 250 from clients: 782633202867762597
+	lsp2_test.go:226: Server read message 171 of 250 from clients: 3273552291852778590
+	lsp2_test.go:226: Server read message 172 of 250 from clients: 188609050050130584
+	lsp2_test.go:226: Server read message 173 of 250 from clients: 188609050050130584
+	lsp2_test.go:226: Server read message 174 of 250 from clients: 3273552291852778590
+	lsp2_test.go:226: Server read message 175 of 250 from clients: 3273552291852778590
+	lsp2_test.go:226: Server read message 176 of 250 from clients: 7853639011485401781
+	lsp2_test.go:226: Server read message 177 of 250 from clients: 188609050050130584
+	lsp2_test.go:226: Server read message 178 of 250 from clients: 39673590492075355
+	lsp2_test.go:226: Server read message 179 of 250 from clients: 8505433183249972466
+	lsp2_test.go:226: Server read message 180 of 250 from clients: 39673590492075355
+	lsp2_test.go:226: Server read message 181 of 250 from clients: 8505433183249972466
+	lsp2_test.go:226: Server read message 182 of 250 from clients: 188609050050130584
+	lsp2_test.go:226: Server read message 183 of 250 from clients: 39673590492075355
+	lsp2_test.go:226: Server read message 184 of 250 from clients: 188609050050130584
+	lsp2_test.go:226: Server read message 185 of 250 from clients: 39673590492075355
+	lsp2_test.go:226: Server read message 186 of 250 from clients: 3273552291852778590
+	lsp2_test.go:226: Server read message 187 of 250 from clients: 188609050050130584
+	lsp2_test.go:226: Server read message 188 of 250 from clients: 39673590492075355
+	lsp2_test.go:226: Server read message 189 of 250 from clients: 8505433183249972466
+	lsp2_test.go:226: Server read message 190 of 250 from clients: 6472036125412537044
+	lsp2_test.go:226: Server read message 191 of 250 from clients: 3553457119571937739
+	lsp2_test.go:226: Server read message 192 of 250 from clients: 898194423829772516
+	lsp2_test.go:226: Server read message 193 of 250 from clients: 2809580997413117273
+	lsp2_test.go:226: Server read message 194 of 250 from clients: 7315035055919708565
+	lsp2_test.go:226: Server read message 195 of 250 from clients: 5108135016547946235
+	lsp2_test.go:226: Server read message 196 of 250 from clients: 3553457119571937739
+	lsp2_test.go:226: Server read message 197 of 250 from clients: 898194423829772516
+	lsp2_test.go:226: Server read message 198 of 250 from clients: 2809580997413117273
+	lsp2_test.go:226: Server read message 199 of 250 from clients: 7315035055919708565
+	lsp2_test.go:226: Server read message 200 of 250 from clients: 5108135016547946235
+	lsp2_test.go:226: Server read message 201 of 250 from clients: 3553457119571937739
+	lsp2_test.go:226: Server read message 202 of 250 from clients: 898194423829772516
+	lsp2_test.go:226: Server read message 203 of 250 from clients: 3553457119571937739
+	lsp2_test.go:226: Server read message 204 of 250 from clients: 898194423829772516
+	lsp2_test.go:226: Server read message 205 of 250 from clients: 3553457119571937739
+	lsp2_test.go:226: Server read message 206 of 250 from clients: 898194423829772516
+	lsp2_test.go:226: Server read message 207 of 250 from clients: 2809580997413117273
+	lsp2_test.go:226: Server read message 208 of 250 from clients: 2809580997413117273
+	lsp2_test.go:226: Server read message 209 of 250 from clients: 7315035055919708565
+	lsp2_test.go:226: Server read message 210 of 250 from clients: 5108135016547946235
+	lsp2_test.go:226: Server read message 211 of 250 from clients: 7315035055919708565
+	lsp2_test.go:226: Server read message 212 of 250 from clients: 5108135016547946235
+	lsp2_test.go:226: Server read message 213 of 250 from clients: 2809580997413117273
+	lsp2_test.go:226: Server read message 214 of 250 from clients: 7315035055919708565
+	lsp2_test.go:226: Server read message 215 of 250 from clients: 5108135016547946235
+	lsp2_test.go:226: Server read message 216 of 250 from clients: 3553457119571937739
+	lsp2_test.go:226: Server read message 217 of 250 from clients: 898194423829772516
+	lsp2_test.go:226: Server read message 218 of 250 from clients: 2809580997413117273
+	lsp2_test.go:226: Server read message 219 of 250 from clients: 7315035055919708565
+	lsp2_test.go:226: Server read message 220 of 250 from clients: 5108135016547946235
+	lsp2_test.go:226: Server read message 221 of 250 from clients: 39673590492075355
+	lsp2_test.go:226: Server read message 222 of 250 from clients: 8505433183249972466
+	lsp2_test.go:226: Server read message 223 of 250 from clients: 3553457119571937739
+	lsp2_test.go:226: Server read message 224 of 250 from clients: 898194423829772516
+	lsp2_test.go:226: Server read message 225 of 250 from clients: 2809580997413117273
+	lsp2_test.go:226: Server read message 226 of 250 from clients: 8505433183249972466
+	lsp2_test.go:226: Server read message 227 of 250 from clients: 7315035055919708565
+	lsp2_test.go:226: Server read message 228 of 250 from clients: 3553457119571937739
+	lsp2_test.go:226: Server read message 229 of 250 from clients: 5108135016547946235
+	lsp2_test.go:226: Server read message 230 of 250 from clients: 898194423829772516
+	lsp2_test.go:226: Server read message 231 of 250 from clients: 2809580997413117273
+	lsp2_test.go:226: Server read message 232 of 250 from clients: 8505433183249972466
+	lsp2_test.go:226: Server read message 233 of 250 from clients: 7315035055919708565
+	lsp2_test.go:226: Server read message 234 of 250 from clients: 3553457119571937739
+	lsp2_test.go:226: Server read message 235 of 250 from clients: 5108135016547946235
+	lsp2_test.go:226: Server read message 236 of 250 from clients: 898194423829772516
+	lsp2_test.go:226: Server read message 237 of 250 from clients: 782633202867762597
+	lsp2_test.go:226: Server read message 238 of 250 from clients: 2809580997413117273
+	lsp2_test.go:226: Server read message 239 of 250 from clients: 7853639011485401781
+	lsp2_test.go:226: Server read message 240 of 250 from clients: 7315035055919708565
+	lsp2_test.go:226: Server read message 241 of 250 from clients: 3273552291852778590
+	lsp2_test.go:226: Server read message 242 of 250 from clients: 5108135016547946235
+	lsp2_test.go:226: Server read message 243 of 250 from clients: 39673590492075355
+	lsp2_test.go:226: Server read message 244 of 250 from clients: 8505433183249972466
+	lsp2_test.go:226: Server read message 245 of 250 from clients: 5108135016547946235
+	lsp2_test.go:248: Test timed out after 2.50 secs
+127.0.0.1:43853
+client 1 connected in
+The window's addr: 127.0.0.1:51984
+The server has replied.
+Connection established
+=== TestWindow4: 1 client, scattered msgs (1 clients, 10 msgs/client, 20 window size, 5 max epochs)
+127.0.0.1:46842
+client 1 connected in
+The window's addr: 127.0.0.1:43302
+The server has replied.
+Connection established
+127.0.0.1:46842
+client 2 connected in
+The window's addr: 127.0.0.1:55497
+The server has replied.
+Connection established
+127.0.0.1:46842
+client 3 connected in
+The window's addr: 127.0.0.1:39795
+The server has replied.
+Connection established
+127.0.0.1:46842
+client 4 connected in
+The window's addr: 127.0.0.1:38663
+The server has replied.
+Connection established
+127.0.0.1:46842
+client 5 connected in
+The window's addr: 127.0.0.1:56755
+The server has replied.
+Connection established
+=== TestWindow5: 5 clients, scattered msgs (5 clients, 10 msgs/client, 20 window size, 5 max epochs)
+127.0.0.1:26147
+client 1 connected in
+The window's addr: 127.0.0.1:45756
+The server has replied.
+Connection established
+127.0.0.1:26147
+client 2 connected in
+The window's addr: 127.0.0.1:32882
+The server has replied.
+Connection established
+127.0.0.1:26147
+client 3 connected in
+The window's addr: 127.0.0.1:54825
+The server has replied.
+Connection established
+127.0.0.1:26147
+client 4 connected in
+The window's addr: 127.0.0.1:53583
+The server has replied.
+Connection established
+127.0.0.1:26147
+client 5 connected in
+The window's addr: 127.0.0.1:50088
+The server has replied.
+Connection established
+127.0.0.1:26147
+client 6 connected in
+The window's addr: 127.0.0.1:49672
+The server has replied.
+Connection established
+127.0.0.1:26147
+client 7 connected in
+The window's addr: 127.0.0.1:52591
+The server has replied.
+Connection established
+127.0.0.1:26147
+client 8 connected in
+The window's addr: 127.0.0.1:58035
+The server has replied.
+Connection established
+127.0.0.1:26147
+client 9 connected in
+The window's addr: 127.0.0.1:36311
+The server has replied.
+Connection established
+127.0.0.1:26147
+client 10 connected in
+The window's addr: 127.0.0.1:40727
+The server has replied.
+Connection established
+=== TestWindow6: 10 clients, scattered msgs (10 clients, 10 msgs/client, 20 window size, 5 max epochs)
+FAIL
+exit status 1
+FAIL	github.com/cmu440/lsp	15.792s

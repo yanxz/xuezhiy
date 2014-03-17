@@ -1,0 +1,163 @@
+=== TestServerFastClose1: Fast close of server (1 clients, 10 msgs/client, 12 max epochs, 1 window size)
+127.0.0.1:13694
+[Server] Read reasonable message {0 0 0 []}
+client 1 connected in
+The window's addr: 127.0.0.1:33956
+[Client] Read reasonable message {2 1 0 []}
+The server has replied.
+Connection established
+[Server] Read reasonable message {2 1 0 []}
+[Client] Read reasonable message {2 1 0 []}
+[Server] Read reasonable message {1 1 1 [53 53 55 55 48 48 54 55 57 49 57 52 55 55 55 57 52 49 48]}
+[Server] Read reasonable message {2 1 0 []}
+[Client] Read reasonable message {2 1 1 []}
+[Server] Read reasonable message {1 1 2 [56 54 55 52 54 54 53 50 50 51 48 56 50 49 53 51 53 53 49]}
+[Client] Read reasonable message {2 1 2 []}
+[Server] Read reasonable message {1 1 3 [54 49 50 57 52 56 52 54 49 49 54 54 54 49 52 53 56 50 49]}
+[Client] Read reasonable message {2 1 3 []}
+[Server] Read reasonable message {1 1 4 [52 48 51 55 50 48 48 55 57 52 50 51 53 48 49 48 48 53 49]}
+[Client] Read reasonable message {2 1 4 []}
+[Server] Read reasonable message {1 1 5 [51 57 49 54 53 56 57 54 49 54 50 56 55 49 49 51 57 51 55]}
+[Client] Read reasonable message {2 1 5 []}
+[Server] Read reasonable message {1 1 6 [54 51 51 52 56 50 52 55 50 52 53 52 57 49 54 55 51 50 48]}
+[Client] Read reasonable message {2 1 6 []}
+[Server] Read reasonable message {1 1 7 [54 48 53 51 57 52 54 52 55 54 51 50 57 54 57 55 53 56]}
+[Client] Read reasonable message {2 1 7 []}
+[Server] Read reasonable message {1 1 8 [49 52 52 51 54 51 53 51 49 55 51 51 49 55 55 54 49 52 56]}
+[Client] Read reasonable message {2 1 8 []}
+[Server] Read reasonable message {1 1 9 [56 57 52 51 56 53 57 52 57 49 56 51 49 49 55 50 49 54]}
+[Client] Read reasonable message {2 1 9 []}
+[Server] Read reasonable message {1 1 10 [50 55 55 53 52 50 50 48 52 48 52 56 48 50 55 57 52 52 57]}
+[Client] Read reasonable message {2 1 10 []}
+[Client] Read reasonable message {2 1 10 []}
+[Server] Read reasonable message {2 1 0 []}
+[Client] Read reasonable message {1 1 1 [53 53 55 55 48 48 54 55 57 49 57 52 55 55 55 57 52 49 48]}
+[Client] Read reasonable message {2 1 10 []}
+[Server] Read reasonable message {2 1 1 []}
+[Client] Read reasonable message {1 1 2 [56 54 55 52 54 54 53 50 50 51 48 56 50 49 53 51 53 53 49]}
+[Server] Read reasonable message {2 1 2 []}
+[Client] Read reasonable message {1 1 3 [54 49 50 57 52 56 52 54 49 49 54 54 54 49 52 53 56 50 49]}
+[Server] Read reasonable message {2 1 3 []}
+[Client] Read reasonable message {1 1 4 [52 48 51 55 50 48 48 55 57 52 50 51 53 48 49 48 48 53 49]}
+[Server] Read reasonable message {2 1 4 []}
+[Client] Read reasonable message {1 1 5 [51 57 49 54 53 56 57 54 49 54 50 56 55 49 49 51 57 51 55]}
+[Server] Read reasonable message {2 1 4 []}
+[Server] Read reasonable message {2 1 5 []}
+[Client] Read reasonable message {1 1 6 [54 51 51 52 56 50 52 55 50 52 53 52 57 49 54 55 51 50 48]}
+[Server] Read reasonable message {2 1 6 []}
+[Client] Read reasonable message {1 1 7 [54 48 53 51 57 52 54 52 55 54 51 50 57 54 57 55 53 56]}
+[Server] Read reasonable message {2 1 7 []}
+[Client] Read reasonable message {1 1 8 [49 52 52 51 54 51 53 51 49 55 51 51 49 55 55 54 49 52 56]}
+[Server] Read reasonable message {2 1 8 []}
+[Client] Read reasonable message {1 1 9 [56 57 52 51 56 53 57 52 57 49 56 51 49 49 55 50 49 54]}
+[Server] Read reasonable message {2 1 9 []}
+[Client] Read reasonable message {1 1 10 [50 55 55 53 52 50 50 48 52 48 52 56 48 50 55 57 52 52 57]}
+[Server] Read reasonable message {2 1 10 []}
+[Server]%!(EXTRA *net.OpError=read udp 127.0.0.1:13694: use of closed network connection)[Client]  read udp 127.0.0.1:13694: connection refused , server listen UDPConn has corrupted.
+Closed called
+here close
+not hearing from the server, shutting down...
+[Client]  read udp 127.0.0.1:13694: use of closed network connection , server listen UDPConn has corrupted.
+[Client]  use of closed network connection , server listen UDPConn has corrupted.
+[Client]  use of closed network connection , server listen UDPConn has corrupted.
+[Client]  use of closed network connection , server listen UDPConn has corrupted.
+[Client]  use of closed network connection , server listen UDPConn has corrupted.
+[Client]  use of closed network connection , server listen UDPConn has corrupted.
+[Client]  use of closed network connection , server listen UDPConn has corrupted.
+[Client]  use of closed network connection , server listen UDPConn has corrupted.
+--- FAIL: TestServerFastClose1 (6.00 seconds)
+	lsp4_test.go:105: Setting test to timeout after 12 epochs.
+	lsp4_test.go:331: Waiting for server...
+	lsp4_test.go:116: Setting global write drop percent to 0%
+	lsp4_test.go:124: Waiting for master...
+	lsp4_test.go:151: Server created on port 13694.
+	lsp4_test.go:156: Server waiting to read...
+	lsp4_test.go:340: Got signal from server. Exiting...
+	lsp4_test.go:348: Waiting for clients...
+	lsp4_test.go:255: Client 0 created with id 1 to server at localhost:13694
+	lsp4_test.go:260: Client 0 (id 1) waiting to write
+	lsp4_test.go:358: Got signals from all clients. Exiting...
+	lsp4_test.go:386: Server + all clients started. Shutting off network...
+	lsp4_test.go:367: Toggling network
+	lsp4_test.go:369: Waiting for network...
+	lsp4_test.go:126: Setting global write drop percent to 100%
+	lsp4_test.go:130: Waiting for master...
+	lsp4_test.go:375: Network toggled.
+	lsp4_test.go:321: Sending signal to all clients...
+	lsp4_test.go:348: Waiting for clients...
+	lsp4_test.go:262: Client 0 (id 1) writing messages
+	lsp4_test.go:272: Client 0 (id 1) wrote all 10 messages to server
+	lsp4_test.go:277: Client 0 (id 1) waiting to read
+	lsp4_test.go:358: Got signals from all clients. Exiting...
+	lsp4_test.go:367: Toggling network
+	lsp4_test.go:369: Waiting for network...
+	lsp4_test.go:132: Setting global write drop percent to 0%
+	lsp4_test.go:135: Sleeping for 1000 ms
+	lsp4_test.go:375: Network toggled.
+	lsp4_test.go:367: Toggling network
+	lsp4_test.go:124: Waiting for master...
+	lsp4_test.go:126: Setting global write drop percent to 100%
+	lsp4_test.go:369: Waiting for network...
+	lsp4_test.go:375: Network toggled.
+	lsp4_test.go:315: Sending signal to server...
+	lsp4_test.go:331: Waiting for server...
+	lsp4_test.go:130: Waiting for master...
+	lsp4_test.go:158: Server beginning to read messages...
+	lsp4_test.go:191: Server received element 0, value 5577006791947779410 from connection 1. Correct!
+	lsp4_test.go:191: Server received element 1, value 8674665223082153551 from connection 1. Correct!
+	lsp4_test.go:191: Server received element 2, value 6129484611666145821 from connection 1. Correct!
+	lsp4_test.go:191: Server received element 3, value 4037200794235010051 from connection 1. Correct!
+	lsp4_test.go:191: Server received element 4, value 3916589616287113937 from connection 1. Correct!
+	lsp4_test.go:191: Server received element 5, value 6334824724549167320 from connection 1. Correct!
+	lsp4_test.go:191: Server received element 6, value 605394647632969758 from connection 1. Correct!
+	lsp4_test.go:191: Server received element 7, value 1443635317331776148 from connection 1. Correct!
+	lsp4_test.go:191: Server received element 8, value 894385949183117216 from connection 1. Correct!
+	lsp4_test.go:191: Server received element 9, value 2775422040480279449 from connection 1. Correct!
+	lsp4_test.go:194: Server read all 10 messages from clients.
+	lsp4_test.go:199: Server waiting to write...
+	lsp4_test.go:340: Got signal from server. Exiting...
+	lsp4_test.go:315: Sending signal to server...
+	lsp4_test.go:331: Waiting for server...
+	lsp4_test.go:201: Server writing messages...
+	lsp4_test.go:228: Server wrote all 10 messages to clients
+	lsp4_test.go:231: Server waiting to close...
+	lsp4_test.go:340: Got signal from server. Exiting...
+	lsp4_test.go:315: Sending signal to server...
+	lsp4_test.go:367: Toggling network
+	lsp4_test.go:369: Waiting for network...
+	lsp4_test.go:233: Server closing...
+	lsp4_test.go:132: Setting global write drop percent to 0%
+	lsp4_test.go:135: Sleeping for 1000 ms
+	lsp4_test.go:375: Network toggled.
+	lsp4_test.go:331: Waiting for server...
+	lsp4_test.go:235: Server closed.
+	lsp4_test.go:340: Got signal from server. Exiting...
+	lsp4_test.go:367: Toggling network
+	lsp4_test.go:124: Waiting for master...
+	lsp4_test.go:126: Setting global write drop percent to 100%
+	lsp4_test.go:369: Waiting for network...
+	lsp4_test.go:375: Network toggled.
+	lsp4_test.go:321: Sending signal to all clients...
+	lsp4_test.go:348: Waiting for clients...
+	lsp4_test.go:130: Waiting for master...
+	lsp4_test.go:279: Client 0 (id 1) reading messages
+	lsp4_test.go:300: Client 0 (id 1) received element #0, value 5577006791947779410. Correct!
+	lsp4_test.go:300: Client 0 (id 1) received element #1, value 8674665223082153551. Correct!
+	lsp4_test.go:300: Client 0 (id 1) received element #2, value 6129484611666145821. Correct!
+	lsp4_test.go:300: Client 0 (id 1) received element #3, value 4037200794235010051. Correct!
+	lsp4_test.go:300: Client 0 (id 1) received element #4, value 3916589616287113937. Correct!
+	lsp4_test.go:300: Client 0 (id 1) received element #5, value 6334824724549167320. Correct!
+	lsp4_test.go:300: Client 0 (id 1) received element #6, value 605394647632969758. Correct!
+	lsp4_test.go:300: Client 0 (id 1) received element #7, value 1443635317331776148. Correct!
+	lsp4_test.go:300: Client 0 (id 1) received element #8, value 894385949183117216. Correct!
+	lsp4_test.go:300: Client 0 (id 1) received element #9, value 2775422040480279449. Correct!
+	lsp4_test.go:302: Client 0 (id 1) read all 10 messages from servers
+	lsp4_test.go:305: Client 0 (id 1) waiting to close...
+	lsp4_test.go:358: Got signals from all clients. Exiting...
+	lsp4_test.go:321: Sending signal to all clients...
+	lsp4_test.go:348: Waiting for clients...
+	lsp4_test.go:307: Client 0 (id 1) closing...
+	lsp4_test.go:353: Test timed out waiting for clients.
+FAIL
+exit status 1
+FAIL	github.com/cmu440/lsp	6.003s

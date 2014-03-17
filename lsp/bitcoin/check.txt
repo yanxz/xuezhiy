@@ -1,0 +1,60 @@
+
+18:28:51.622885 stest.go:587: === Running test: Simple request, length 5, 2 miners (./stest -s=f5ww)
+18:28:51.623035 stest.go:482: Starting server...
+18:28:52.344415 stest.go:237: Request client #1 sending request message to server: [Request 5300104416327815936 0 99999]
+18:28:52.845552 stest.go:359: Starting miner #1...
+18:28:52.845667 stest.go:390: Miner #1 calling LSP client's Read method...
+18:28:52.846288 stest.go:396: Miner #1's Read method returned.
+18:28:52.846367 stest.go:403: Miner #1 received message: [Request 5300104416327815936 0 9999]
+18:28:52.846401 stest.go:407: Miner #1 assigned range [0,9999]
+18:28:53.346423 stest.go:359: Starting miner #2...
+18:28:53.346507 stest.go:390: Miner #2 calling LSP client's Read method...
+18:28:53.346945 stest.go:396: Miner #2's Read method returned.
+18:28:53.346997 stest.go:403: Miner #2 received message: [Request 5300104416327815936 10000 19999]
+18:28:53.347017 stest.go:407: Miner #2 assigned range [10000,19999]
+18:28:53.846675 stest.go:443: Miner #1 didn't find best hash/nonce in range [0,9999]
+18:28:53.846715 stest.go:390: Miner #1 calling LSP client's Read method...
+18:28:53.846701 stest.go:567: Waiting for final result for request #1...
+18:28:53.846795 stest.go:277: Request client #1 calling LSP client's Read method...
+18:28:53.847584 stest.go:396: Miner #1's Read method returned.
+18:28:53.847630 stest.go:403: Miner #1 received message: [Request 5300104416327815936 20000 29999]
+18:28:53.847647 stest.go:407: Miner #1 assigned range [20000,29999]
+18:28:54.347294 stest.go:443: Miner #2 didn't find best hash/nonce in range [10000,19999]
+18:28:54.347338 stest.go:390: Miner #2 calling LSP client's Read method...
+18:28:54.347815 stest.go:396: Miner #2's Read method returned.
+18:28:54.347862 stest.go:403: Miner #2 received message: [Request 5300104416327815936 30000 39999]
+18:28:54.347878 stest.go:407: Miner #2 assigned range [30000,39999]
+18:28:54.847900 stest.go:443: Miner #1 didn't find best hash/nonce in range [20000,29999]
+18:28:54.847985 stest.go:390: Miner #1 calling LSP client's Read method...
+18:28:54.848539 stest.go:396: Miner #1's Read method returned.
+18:28:54.848611 stest.go:403: Miner #1 received message: [Request 5300104416327815936 40000 49999]
+18:28:54.848637 stest.go:407: Miner #1 assigned range [40000,49999]
+18:28:55.348069 stest.go:443: Miner #2 didn't find best hash/nonce in range [30000,39999]
+18:28:55.348119 stest.go:390: Miner #2 calling LSP client's Read method...
+18:28:55.348648 stest.go:396: Miner #2's Read method returned.
+18:28:55.348708 stest.go:403: Miner #2 received message: [Request 5300104416327815936 50000 59999]
+18:28:55.348739 stest.go:407: Miner #2 assigned range [50000,59999]
+18:28:55.848952 stest.go:443: Miner #1 didn't find best hash/nonce in range [40000,49999]
+18:28:55.849031 stest.go:390: Miner #1 calling LSP client's Read method...
+18:28:55.849613 stest.go:396: Miner #1's Read method returned.
+18:28:55.849670 stest.go:403: Miner #1 received message: [Request 5300104416327815936 60000 69999]
+18:28:55.849692 stest.go:407: Miner #1 assigned range [60000,69999]
+18:28:56.348988 stest.go:443: Miner #2 didn't find best hash/nonce in range [50000,59999]
+18:28:56.349057 stest.go:390: Miner #2 calling LSP client's Read method...
+18:28:56.349629 stest.go:396: Miner #2's Read method returned.
+18:28:56.349683 stest.go:403: Miner #2 received message: [Request 5300104416327815936 70000 79999]
+18:28:56.349703 stest.go:407: Miner #2 assigned range [70000,79999]
+18:28:56.849970 stest.go:443: Miner #1 didn't find best hash/nonce in range [60000,69999]
+18:28:56.850047 stest.go:390: Miner #1 calling LSP client's Read method...
+18:28:56.850696 stest.go:396: Miner #1's Read method returned.
+18:28:56.850752 stest.go:403: Miner #1 received message: [Request 5300104416327815936 80000 89999]
+18:28:56.850773 stest.go:407: Miner #1 assigned range [80000,89999]
+18:28:57.349953 stest.go:443: Miner #2 didn't find best hash/nonce in range [70000,79999]
+18:28:57.350029 stest.go:390: Miner #2 calling LSP client's Read method...
+18:28:57.350643 stest.go:396: Miner #2's Read method returned.
+18:28:57.350718 stest.go:403: Miner #2 received message: [Request 5300104416327815936 90000 99999]
+18:28:57.350740 stest.go:407: Miner #2 assigned range [90000,99999]
+18:28:57.851071 stest.go:443: Miner #1 found best hash/nonce 1184483303345635/87217
+18:28:57.851126 stest.go:390: Miner #1 calling LSP client's Read method...
+18:28:58.350978 stest.go:443: Miner #2 didn't find best hash/nonce in range [90000,99999]
+18:28:58.351054 stest.go:390: Miner #2 calling LSP client's Read method...

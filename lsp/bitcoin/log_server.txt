@@ -1,0 +1,189 @@
+18:38:23.688598 server.go:214: Creating new server...
+18:38:23.688801 server.go:220: Begin listening to messages...
+18:38:24.186914 server.go:226: Miner 1 joined...
+18:38:24.687733 server.go:226: Miner 2 joined...
+18:38:26.059095 server.go:243: Client 3 come... 
+18:38:26.059181 server.go:244: [Request 2257090791187358810 0 99999]
+18:38:26.059207 server.go:362: doJob called, the length of the jobQueue: 1.
+18:38:26.059223 server.go:376: Send jobChunk[3 2257090791187358810 0 9999] to Miner 1.
+18:38:26.059280 server.go:376: Send jobChunk[3 2257090791187358810 10000 19999] to Miner 2.
+18:38:27.060056 server.go:259: Result received from miner 2.
+18:38:27.060099 server.go:260: [Result 18446744073709551615 19999]
+18:38:27.060119 server.go:362: doJob called, the length of the jobQueue: 1.
+18:38:27.060142 server.go:376: Send jobChunk[3 2257090791187358810 20000 29999] to Miner 2.
+18:38:27.060333 server.go:226: Miner 4 joined...
+18:38:27.060370 server.go:362: doJob called, the length of the jobQueue: 1.
+18:38:27.060398 server.go:376: Send jobChunk[3 2257090791187358810 30000 39999] to Miner 4.
+18:38:27.596682 server.go:243: Client 5 come... 
+18:38:27.596725 server.go:244: [Request 2179289022326941507 0 9999]
+18:38:28.061114 server.go:259: Result received from miner 2.
+18:38:28.061183 server.go:260: [Result 18446744073709551615 29999]
+18:38:28.061208 server.go:362: doJob called, the length of the jobQueue: 2.
+18:38:28.061224 server.go:376: Send jobChunk[3 2257090791187358810 40000 49999] to Miner 2.
+18:38:28.061284 server.go:259: Result received from miner 4.
+18:38:28.061310 server.go:260: [Result 18446744073709551615 39999]
+18:38:28.061327 server.go:362: doJob called, the length of the jobQueue: 2.
+18:38:28.061342 server.go:376: Send jobChunk[3 2257090791187358810 50000 59999] to Miner 4.
+18:38:28.634620 server.go:243: Client 6 come... 
+18:38:28.634673 server.go:244: [Request 7591564017288155814 0 9999]
+18:38:29.062113 server.go:259: Result received from miner 4.
+18:38:29.062177 server.go:260: [Result 18446744073709551615 59999]
+18:38:29.062206 server.go:362: doJob called, the length of the jobQueue: 3.
+18:38:29.062222 server.go:376: Send jobChunk[3 2257090791187358810 60000 69999] to Miner 4.
+18:38:30.062938 server.go:259: Result received from miner 4.
+18:38:30.062995 server.go:260: [Result 18446744073709551615 69999]
+18:38:30.063028 server.go:362: doJob called, the length of the jobQueue: 3.
+18:38:30.063045 server.go:376: Send jobChunk[3 2257090791187358810 70000 79999] to Miner 4.
+18:38:30.135766 server.go:226: Miner 7 joined...
+18:38:30.135802 server.go:362: doJob called, the length of the jobQueue: 3.
+18:38:30.135820 server.go:376: Send jobChunk[3 2257090791187358810 80000 89999] to Miner 7.
+18:38:30.636488 server.go:226: Miner 8 joined...
+18:38:30.636526 server.go:362: doJob called, the length of the jobQueue: 3.
+18:38:30.636545 server.go:376: Send jobChunk[3 2257090791187358810 90000 99999] to Miner 8.
+18:38:31.063794 server.go:259: Result received from miner 4.
+18:38:31.063840 server.go:260: [Result 18446744073709551615 79999]
+18:38:31.063868 server.go:362: doJob called, the length of the jobQueue: 3.
+18:38:31.136525 server.go:259: Result received from miner 7.
+18:38:31.136580 server.go:260: [Result 18446744073709551615 89999]
+18:38:31.136623 server.go:362: doJob called, the length of the jobQueue: 3.
+18:38:31.175162 server.go:243: Client 9 come... 
+18:38:31.175205 server.go:244: [Request 5903096856706403945 0 9999]
+18:38:31.637197 server.go:259: Result received from miner 8.
+18:38:31.637244 server.go:260: [Result 18446744073709551615 99999]
+18:38:31.637264 server.go:362: doJob called, the length of the jobQueue: 4.
+18:38:32.043609 server.go:243: Client 10 come... 
+18:38:32.043652 server.go:244: [Request 1116699621723987585 0 99999]
+18:38:32.581406 server.go:243: Client 11 come... 
+18:38:32.581447 server.go:244: [Request 8224622289694205552 0 9999]
+18:38:33.082117 server.go:226: Miner 12 joined...
+18:38:33.082173 server.go:362: doJob called, the length of the jobQueue: 6.
+18:38:33.582790 server.go:226: Miner 13 joined...
+18:38:33.582826 server.go:362: doJob called, the length of the jobQueue: 6.
+18:38:34.087112 server.go:243: Client 14 come... 
+18:38:34.087165 server.go:244: [Request 1573913323147967125 0 999]
+18:38:35.689869 server.go:433: Server read error from connection 1.
+18:38:35.689911 server.go:322: The miner 1 is lost.
+18:38:35.689935 server.go:362: doJob called, the length of the jobQueue: 7.
+18:38:35.689956 server.go:376: Send jobChunk[3 2257090791187358810 0 9999] to Miner 4.
+18:38:36.088561 server.go:226: Miner 15 joined...
+18:38:36.088605 server.go:362: doJob called, the length of the jobQueue: 7.
+18:38:36.589119 server.go:226: Miner 16 joined...
+18:38:36.589165 server.go:362: doJob called, the length of the jobQueue: 7.
+18:38:37.456217 server.go:243: Client 17 come... 
+18:38:37.456274 server.go:244: [Request 6129782778021219982 0 99999]
+18:38:37.690158 server.go:433: Server read error from connection 3.
+18:38:37.690206 server.go:304: The client 3 is lost.
+18:38:37.690240 server.go:362: doJob called, the length of the jobQueue: 7.
+18:38:37.690263 server.go:376: Send jobChunk[5 2179289022326941507 0 9999] to Miner 7.
+18:38:37.956774 server.go:226: Miner 18 joined...
+18:38:37.956811 server.go:362: doJob called, the length of the jobQueue: 7.
+18:38:38.457330 server.go:226: Miner 19 joined...
+18:38:38.457366 server.go:362: doJob called, the length of the jobQueue: 7.
+18:38:38.957939 server.go:226: Miner 20 joined...
+18:38:38.957984 server.go:362: doJob called, the length of the jobQueue: 7.
+18:38:39.458698 server.go:226: Miner 21 joined...
+18:38:39.458743 server.go:362: doJob called, the length of the jobQueue: 7.
+18:38:39.690281 server.go:433: Server read error from connection 2.
+18:38:39.690325 server.go:322: The miner 2 is lost.
+18:38:39.959267 server.go:226: Miner 22 joined...
+18:38:39.959309 server.go:362: doJob called, the length of the jobQueue: 7.
+18:38:40.459796 server.go:226: Miner 23 joined...
+18:38:40.459841 server.go:362: doJob called, the length of the jobQueue: 7.
+18:38:40.960494 server.go:226: Miner 24 joined...
+18:38:40.960532 server.go:362: doJob called, the length of the jobQueue: 7.
+18:38:41.461119 server.go:226: Miner 25 joined...
+18:38:41.461164 server.go:362: doJob called, the length of the jobQueue: 7.
+18:38:41.961741 server.go:226: Miner 26 joined...
+18:38:41.961776 server.go:362: doJob called, the length of the jobQueue: 7.
+18:38:42.462404 server.go:226: Miner 27 joined...
+18:38:42.462440 server.go:362: doJob called, the length of the jobQueue: 7.
+18:38:42.963198 server.go:226: Miner 28 joined...
+18:38:42.963242 server.go:362: doJob called, the length of the jobQueue: 7.
+18:38:43.463790 server.go:226: Miner 29 joined...
+18:38:43.463833 server.go:362: doJob called, the length of the jobQueue: 7.
+18:38:43.689658 server.go:433: Server read error from connection 10.
+18:38:43.689698 server.go:304: The client 10 is lost.
+18:38:43.689719 server.go:362: doJob called, the length of the jobQueue: 6.
+18:38:43.964483 server.go:226: Miner 30 joined...
+18:38:43.964529 server.go:362: doJob called, the length of the jobQueue: 6.
+18:38:44.464972 server.go:226: Miner 31 joined...
+18:38:44.465008 server.go:362: doJob called, the length of the jobQueue: 6.
+18:38:44.965616 server.go:226: Miner 32 joined...
+18:38:44.965653 server.go:362: doJob called, the length of the jobQueue: 6.
+18:38:45.690369 server.go:433: Server read error from connection 4.
+18:38:45.690417 server.go:322: The miner 4 is lost.
+18:38:49.690295 server.go:433: Server read error from connection 7.
+18:38:49.690340 server.go:322: The miner 7 is lost.
+18:38:49.690362 server.go:362: doJob called, the length of the jobQueue: 6.
+18:38:49.690380 server.go:376: Send jobChunk[5 2179289022326941507 0 9999] to Miner 8.
+18:38:50.691264 server.go:259: Result received from miner 8.
+18:38:50.691308 server.go:260: [Result 2314244877018696 1647]
+18:38:50.691342 server.go:285: The job of client 5 is finished, sending back the result...
+18:38:50.691428 server.go:362: doJob called, the length of the jobQueue: 5.
+18:38:50.691461 server.go:376: Send jobChunk[6 7591564017288155814 0 9999] to Miner 12.
+18:38:50.691531 server.go:433: Server read error from connection 5.
+18:38:51.692277 server.go:259: Result received from miner 12.
+18:38:51.692320 server.go:260: [Result 3106645904857703 7615]
+18:38:51.692349 server.go:285: The job of client 6 is finished, sending back the result...
+18:38:51.692440 server.go:362: doJob called, the length of the jobQueue: 4.
+18:38:51.692478 server.go:376: Send jobChunk[9 5903096856706403945 0 9999] to Miner 13.
+18:38:51.692540 server.go:433: Server read error from connection 6.
+18:38:52.693306 server.go:259: Result received from miner 13.
+18:38:52.693362 server.go:260: [Result 651245057498251 8916]
+18:38:52.693393 server.go:285: The job of client 9 is finished, sending back the result...
+18:38:52.693481 server.go:362: doJob called, the length of the jobQueue: 3.
+18:38:52.693520 server.go:376: Send jobChunk[11 8224622289694205552 0 9999] to Miner 15.
+18:38:52.693581 server.go:433: Server read error from connection 9.
+18:38:53.694223 server.go:259: Result received from miner 15.
+18:38:53.694266 server.go:260: [Result 4252724726307880 250]
+18:38:53.694288 server.go:285: The job of client 11 is finished, sending back the result...
+18:38:53.694368 server.go:362: doJob called, the length of the jobQueue: 2.
+18:38:53.694395 server.go:376: Send jobChunk[14 1573913323147967125 0 999] to Miner 16.
+18:38:53.694432 server.go:433: Server read error from connection 11.
+18:38:54.695252 server.go:259: Result received from miner 16.
+18:38:54.695297 server.go:260: [Result 10424908077676820 841]
+18:38:54.695321 server.go:285: The job of client 14 is finished, sending back the result...
+18:38:54.695401 server.go:362: doJob called, the length of the jobQueue: 1.
+18:38:54.695429 server.go:376: Send jobChunk[17 6129782778021219982 0 9999] to Miner 18.
+18:38:54.695466 server.go:433: Server read error from connection 14.
+18:38:54.695490 server.go:376: Send jobChunk[17 6129782778021219982 10000 19999] to Miner 19.
+18:38:54.695559 server.go:376: Send jobChunk[17 6129782778021219982 20000 29999] to Miner 20.
+18:38:54.695630 server.go:376: Send jobChunk[17 6129782778021219982 30000 39999] to Miner 21.
+18:38:54.695702 server.go:376: Send jobChunk[17 6129782778021219982 40000 49999] to Miner 22.
+18:38:54.695771 server.go:376: Send jobChunk[17 6129782778021219982 50000 59999] to Miner 23.
+18:38:54.695862 server.go:376: Send jobChunk[17 6129782778021219982 60000 69999] to Miner 24.
+18:38:54.695933 server.go:376: Send jobChunk[17 6129782778021219982 70000 79999] to Miner 25.
+18:38:54.696004 server.go:376: Send jobChunk[17 6129782778021219982 80000 89999] to Miner 26.
+18:38:54.696078 server.go:376: Send jobChunk[17 6129782778021219982 90000 99999] to Miner 27.
+18:38:55.696319 server.go:259: Result received from miner 22.
+18:38:55.696365 server.go:260: [Result 18446744073709551615 49999]
+18:38:55.696387 server.go:362: doJob called, the length of the jobQueue: 1.
+18:38:55.696534 server.go:259: Result received from miner 18.
+18:38:55.696568 server.go:260: [Result 18446744073709551615 9999]
+18:38:55.696588 server.go:362: doJob called, the length of the jobQueue: 1.
+18:38:55.696706 server.go:259: Result received from miner 20.
+18:38:55.696739 server.go:260: [Result 18446744073709551615 29999]
+18:38:55.696760 server.go:362: doJob called, the length of the jobQueue: 1.
+18:38:55.696889 server.go:259: Result received from miner 19.
+18:38:55.696922 server.go:260: [Result 18446744073709551615 19999]
+18:38:55.696943 server.go:362: doJob called, the length of the jobQueue: 1.
+18:38:55.697058 server.go:259: Result received from miner 21.
+18:38:55.697092 server.go:260: [Result 18446744073709551615 39999]
+18:38:55.697112 server.go:362: doJob called, the length of the jobQueue: 1.
+18:38:55.697239 server.go:259: Result received from miner 23.
+18:38:55.697272 server.go:260: [Result 349569857613905 56073]
+18:38:55.697292 server.go:362: doJob called, the length of the jobQueue: 1.
+18:38:55.697375 server.go:259: Result received from miner 24.
+18:38:55.697406 server.go:260: [Result 18446744073709551615 69999]
+18:38:55.697426 server.go:362: doJob called, the length of the jobQueue: 1.
+18:38:55.697533 server.go:259: Result received from miner 25.
+18:38:55.697566 server.go:260: [Result 18446744073709551615 79999]
+18:38:55.697586 server.go:362: doJob called, the length of the jobQueue: 1.
+18:38:55.697603 server.go:259: Result received from miner 26.
+18:38:55.697622 server.go:260: [Result 18446744073709551615 89999]
+18:38:55.697640 server.go:362: doJob called, the length of the jobQueue: 1.
+18:38:55.697677 server.go:259: Result received from miner 27.
+18:38:55.697700 server.go:260: [Result 18446744073709551615 99999]
+18:38:55.697718 server.go:285: The job of client 17 is finished, sending back the result...
+18:38:55.697795 server.go:362: doJob called, the length of the jobQueue: 0.
+18:38:55.697823 server.go:433: Server read error from connection 17.
