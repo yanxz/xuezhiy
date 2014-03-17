@@ -1,0 +1,20 @@
+{% extends "blog/postingbase.html" %}
+
+{% block navi_bar %}
+	<div class="blog-masthead">
+		<div class="container">
+			<nav class="blog-nav">
+				<a class="blog-nav-item pull-right" href="{% url 'register' %}">
+					Register
+				</a>
+				<a class="blog-nav-item pull-right" href="{% url 'login' %}">
+					Login
+				</a>
+			</nav>
+		</div>
+	</div>
+{% endblock navi_bar %}
+
+{% block welcome %}
+	<p class="blog-description">Welcome!</p>
+{% endblock welcome %}

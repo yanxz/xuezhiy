@@ -1,0 +1,23 @@
+<users>
+	{% for user in users %}
+	<user>
+		<id>{{user.id}}</id>
+		<name>{{user.first_name}} {{user.last_name}}</name>
+	</user>
+	{% endfor %}
+	{% for user in bloggers %}
+	<sel_blogger>
+		<id>{{user.id}}</id>
+	</sel_blogger>
+	{% endfor %}
+	{% for blog in blogs %}
+	<blog>
+		{% if blog.picture %}
+		<id>{{ blog.id }}</id>
+		{% endif %}
+		<owner>{{ blog.owner.first_name }} {{ blog.owner.last_name }}</owner>
+		<post_time>{{ blog.date_posted }}</post_time>
+		<content>{{ blog.content }}</content>
+	</blog>
+	{% endfor %}
+</users>

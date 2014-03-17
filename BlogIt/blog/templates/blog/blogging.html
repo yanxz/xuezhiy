@@ -1,0 +1,48 @@
+{% extends "blog/postingbase.html" %}
+
+{% block load_js %}
+{% endblock %}
+
+{% block navi_bar %}
+	<div class="blog-masthead">
+		<div class="container">
+			<nav class="blog-nav">
+				<a class="blog-nav-item" href="{% url 'home' %}">Home</a>
+				<a class="blog-nav-item active" href="{% url 'manage_blog' %}">Manage Blogs</a>
+				<a class="blog-nav-item pull-right" href="/blog/logout">
+					Logout
+				</a>
+			</nav>
+		</div>
+	</div>
+{% endblock navi_bar %}
+
+{% block blog %}
+	{% for blog in blogs %}
+		<h2 class="blog-post-title">{{ blog.owner.first_name }} {{ blog.owner.last_name }}</h2>
+		<div class="blog-post-meta">
+		 	{{ blog.date_posted }}<br>
+		</div>
+		{% if blog.picture %}
+		<img src="{% url 'photo' blog.id %}">
+		{% endif %}
+		<div class="blog-post">
+			{{ blog.content }}
+		</div>
+		<div>
+			<a class="btn btn-danger" href="{% url 'delete_blog' blog.id %}" role="button">Delete Blog</a>
+		</div>
+		<hr>
+	{% endfor %}
+	<form enctype="multipart/form-data" method="post" action="{% url 'add_blog' %}" class="control-group">
+		<h4 class="control-label" style="margin-top: 100px">Create New Blog</h4>
+		<div class="controls" style="padding: 1em">
+			{{ form.content }}
+		</div>
+		<div>
+			{{ form.picture }}
+		</div>
+		<input type="submit" value="post blog" class="btn btn-lg btn-primary pull-right" style="margin-bottom : 40px"/>
+	{% csrf_token %}
+	</form>
+{% endblock blog %}

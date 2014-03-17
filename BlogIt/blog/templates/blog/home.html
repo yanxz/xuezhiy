@@ -1,0 +1,15 @@
+{% extends "blog/postingbase.html" %}
+
+{% block navi_bar %}
+	<div class="blog-masthead">
+		<div class="container">
+			<nav class="blog-nav">
+				<a class="blog-nav-item active" href="{% url 'home' %}">Home</a>
+				<a class="blog-nav-item" href="{% url 'manage_blog' %}">Manage Blogs</a>
+				<a class="blog-nav-item pull-right" href="/blog/logout">
+					Logout
+				</a>
+			</nav>
+		</div>
+	</div>
+{% endblock navi_bar %}

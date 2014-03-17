@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html style="height:100%">
+<head>
+	<meta charset="utf-8">
+	<title>BlogIt -- posting</title>
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'bootstrap.css' %}">
+	<link rel="stylesheet" href="{% static 'blog.css' %}">
+	<link rel="stylesheet" href="{% static 'justified-nav.css' %}">
+	{% block load_js %}
+	<script src="{% static 'blog.js' %}" type="text/javascript"></script>
+	{% endblock %}
+</head>
+
+<body style="padding-top:0px;padding-bottm:0px;height:100%">
+{% block navi_bar %}
+{% endblock navi_bar %}
+
+<div style="min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -40px">
+<div class="container" style="height:100%; position:relative">	
+	<div class="blog-header">
+		<h1 class="blog-title">Blog It!</h1>
+		{% block welcome %}
+			<p class="blog-description">Welcome! {{owner.first_name}} {{owner.last_name}}</p>
+		{% endblock welcome %}
+	</div>
+	<hr>
+	<div class="col-sm-3 blog-sidebar" style="padding-bottom: 20px">
+		{% block sidebar %}
+			<ul class="nav nav-list" id="blogger-list">
+				<li class="active"><a href="#">Bloggers</a></li>
+
+				{% for user in users %}
+					{% if user in bloggers %}
+					<li style="background-color: #eeeeee">
+					{% else %}
+					<li>
+					{% endif %}
+						<a href="/blog/selectblogger/{{user.id}}">{{ user.first_name }} {{ user.last_name }}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		{% endblock sidebar %}
+	</div>
+	<div class="col-sm-9 blog-main" id="blog-list">
+		{% block blog %}
+			{% if not blogs %}
+			<h2 class="blog-post-title" style="margin-top:40px">No blogs found with chosen bloggers.</h2>
+			{% endif %}
+			{% for blog in blogs %}
+			<div>
+				<h2 class="blog-post-title">{{ blog.owner.first_name }} {{ blog.owner.last_name }}</h2>
+				<div class="blog-post-meta">
+				 	{{ blog.date_posted }}<br>
+				</div>
+				{% if blog.picture %}
+				<img src="{% url 'photo' blog.id %}">
+				{% endif %}
+				<div class="blog-post">
+					{{ blog.content }}
+				</div>
+				<hr>
+			</div>
+			{% endfor %}
+		{% endblock blog %}
+	</div>
+</div>
+<div style="height:40px">
+	</div>
+</div>
+
+<div class="blog-footer">
+	<p><font color="black">by Xuezhi Yan</font></p>
+</div>
+</body>
